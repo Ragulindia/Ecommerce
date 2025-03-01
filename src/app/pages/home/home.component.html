@@ -30,36 +30,36 @@
         <div class="col-12 col-sm-6 col-md-3 mb-4">
             <h3>Formal Wear</h3>
             <div class="card">
-                <img src="assets/img7.jpg" class="card-img-top" alt="Clothing Item 1">
+                <img src="assets/ec-img11.png" class="card-img-top" alt="Clothing Item 1">
             </div>
-            <button class="btn btn-primary btn-block col-12 mt-2">View More</button> <!-- Full-width button -->
+            <button class="btn custom-btn btn-block col-12 mt-2">View More</button> <!-- Full-width button -->
         </div>
 
         <!-- Card 2 -->
         <div class="col-12 col-sm-6 col-md-3 mb-4">
             <h3>Crop top</h3>
             <div class="card">
-                <img src="assets/img8.avif" class="card-img-top" alt="Clothing Item 1">
+                <img src="assets/ec-img10.png" class="card-img-top" alt="Clothing Item 1">
             </div>
-            <button class="btn btn-primary btn-block col-12 mt-2">View More</button> <!-- Full-width button -->
+            <button class="btn custom-btn btn-block col-12 mt-2">View More</button> <!-- Full-width button -->
         </div>
 
         <!-- Card 3 -->
         <div class="col-12 col-sm-6 col-md-3 mb-4">
             <h3>Bodycon</h3>
             <div class="card">
-                <img src="assets/img7.jpg" class="card-img-top" alt="Clothing Item 1">
+                <img src="assets/em-img9.png" class="card-img-top" alt="Clothing Item 1">
             </div>
-            <button class="btn btn-primary btn-block col-12 mt-2">View More</button> <!-- Full-width button -->
+            <button class="btn custom-btn btn-block col-12 mt-2">View More</button> <!-- Full-width button -->
         </div>
 
         <!-- Card 4 -->
         <div class="col-12 col-sm-6 col-md-3 mb-4">
             <h3>Dress</h3>
             <div class="card">
-                <img src="assets/img9.avif" class="card-img-top" alt="Clothing Item 1">
+                <img src="assets/ec-img8.png" class="card-img-top" alt="Clothing Item 1">
             </div>
-            <button class="btn btn-primary btn-block col-12 mt-2">View More</button> <!-- Full-width button -->
+            <button class="btn custom-btn btn-block col-12 mt-2">View More</button> <!-- Full-width button -->
         </div>
     </div>
     <div class="row">
@@ -67,39 +67,89 @@
         <div class="col-12 col-sm-6 col-md-3 mb-4">
             <h3>Blazers</h3>
             <div class="card">
-                <img src="assets/img6.avif" class="card-img-top" alt="Clothing Item 1">
+                <img src="assets/ec-img11.png" class="card-img-top" alt="Clothing Item 1">
             </div>
-            <button class="btn btn-primary btn-block col-12 mt-2">View More</button> <!-- Full-width button -->
+            <button class="btn custom-btn btn-block col-12 mt-2">View More</button> <!-- Full-width button -->
         </div>
 
         <!-- Card 2 -->
         <div class="col-12 col-sm-6 col-md-3 mb-4">
             <h3>Winter wear</h3>
             <div class="card">
-                <img src="assets/img9.avif" class="card-img-top" alt="Clothing Item 1">
+                <img src="assets/ec-img10.png" class="card-img-top" alt="Clothing Item 1">
             </div>
-            <button class="btn btn-primary btn-block col-12 mt-2">View More</button> <!-- Full-width button -->
+            <button class="btn custom-btn btn-block col-12 mt-2">View More</button> <!-- Full-width button -->
         </div>
 
         <!-- Card 3 -->
         <div class="col-12 col-sm-6 col-md-3 mb-4">
             <h3>Jumpsuit</h3>
             <div class="card">
-                <img src="assets/img10.avif" class="card-img-top" alt="Clothing Item 1">
+                <img src="assets/em-img9.png" class="card-img-top" alt="Clothing Item 1">
             </div>
-            <button class="btn btn-primary btn-block col-12 mt-2">View More</button> <!-- Full-width button -->
+            <button class="btn custom-btn btn-block col-12 mt-2">View More</button> <!-- Full-width button -->
         </div>
 
         <!-- Card 4 -->
         <div class="col-12 col-sm-6 col-md-3 mb-4">
             <h3>Formal wear</h3>
             <div class="card">
-                <img src="assets/img7.jpg" class="card-img-top" alt="Clothing Item 1">
+                <img src="assets/ec-img8.png" class="card-img-top" alt="Clothing Item 1">
             </div>
-            <button class="btn btn-primary btn-block col-12 mt-2">View More</button> <!-- Full-width button -->
+            <button class="btn custom-btn btn-block col-12 mt-2">View More</button> <!-- Full-width button -->
         </div>
     </div>
 </div>
+<div class="container mt-5 overflow-hidden">
+    <h3 class="text-center">New In Dresses</h3>
+    <h5 class="text-center text-purple">View More</h5>
+
+    <!-- Card Container -->
+    <div class="" (mousedown)="startDrag($event)" (mousemove)="onDrag($event)" (mouseup)="endDrag()"
+        (mouseleave)="endDrag()">
+        <div class="product-container d-flex ">
+            <div class="col-sm-6 col-md-4 mx-2" *ngFor="let product of products">
+
+                <div class="card">
+                    <img [src]="product.imageUrl" class="card-img-top" alt="Clothing Item 1">
+                </div>
+                <h5 class="text-center mt-1">{{product.name}}</h5>
+                <h6 class="text-center">Rp. {{product.price}}</h6>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container shadow-sm mt-5">
+    <div class="row align-items-center">
+        <!-- Left side: Two images in two columns -->
+        <div class="col-sm-4">
+            <div class="row">
+                <div class="col-6">
+                    <img src="/assets/ec-img18.png" class="img-fluid mb-3" alt="Image 1">
+                </div>
+                <div class="col-6">
+                    <img src="/assets/ec-img17.png" class="img-fluid mb-3" alt="Image 2">
+                </div>
+            </div>
+        </div>
+
+        <!-- Center: Text and Button -->
+        <div class="col-sm-4 text-center">
+            <h4>Get 50% Off</h4>
+            <p>For all new product purchases</p>
+            <p>min.purchase Rp. 350.000</p>
+            <a href="#" class="btn custom-btn">Shop this</a>
+        </div>
+
+        <!-- Right side: One image -->
+        <div class="col-sm-4 d-flex justify-content-center">
+            <img src="/assets/ec-img16.png" class="img-fluid" alt="Image 3">
+        </div>
+    </div>
+</div>
+
+
 <!-- <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -112,41 +162,53 @@
     </div>
 </div> -->
 <!-- app.component.html -->
-<div class="container mt-5">
-    <div class="row">
-      <!-- Use *ngFor to loop through clothingItems array -->
-      <div class="col-12 col-sm-6 col-md-3 mb-4" *ngFor="let item of clothingItems">
-        <div class="card">
-          <img [src]="item.imageUrl" class="card-img-top" [alt]="item.name">
-          <div class="card-body">
-            <h5 class="card-title">{{ item.name }}</h5>
-            <p class="card-text">{{ item.description }}</p>
-  
-            <!-- Discounted Price -->
-            <div class="d-flex justify-content-between align-items-center">
-              <span class="text-muted text-decoration-line-through">${{ item.originalPrice }}</span>
-              <span class="text-danger">${{ item.discountedPrice }}</span>
+<div class="container mt-5 overflow-hidden">
+    <h3 class="text-center">Our Best Sellers</h3>
+    <h5 class="text-center text-purple">View More</h5>
+    <div class="" (mousedown)="startDrag($event)" (mousemove)="onDrag($event)" (mouseup)="endDrag()"
+        (mouseleave)="endDrag()">
+        <div class="product-container d-flex ">
+            <!-- Card for the Dress -->
+            <div class="col-sm-6 col-md-4 mx-2" *ngFor="let product of dress">
+                <div class="card">
+                    <!-- Image with Badge and Heart Symbol -->
+                    <div class="card-img-container position-relative">
+                        <img [src]="product.link" class="card-img-top p-1 rounded" alt="Dress Image">
+                        <!-- 45% Off Badge -->
+                        <span class="badge badge-off">45% OFF</span>
+                        <!-- Heart Icon -->
+                        <span class="heart-icon"><i class="fas fa-heart"></i></span>
+                    </div>
+
+                    <!-- Card Body (Dress Details) -->
+                    <div class="card-body">
+
+                        <h5 class="card-title col-sm-8 d-inline-block ">Colord crop top</h5>
+
+                        <!-- Star Rating -->
+                        <div class="star-rating col-sm-3 text-bg-success d-inline-block rounded">
+                            <i class="fas fa-star "></i>
+                            <span>4.5 (18)</span>
+                        </div>
+
+                        <!-- Price Section -->
+                        <span class="text-muted text-decoration-line-through">$512.58</span>
+                        <span class="fw-bold ms-2">$230.00</span>
+
+                        <div>
+                            <div class="square-box d-inline-block" style="background-color: #fc7474;"></div>
+                            <div class="square-box d-inline-block ms-2" style="background-color: #892CEB;"></div>
+                            <div class="square-box d-inline-block ms-2" style="background-color: #6fefff;"></div>
+                        </div>
+
+                        <!-- Buttons for View More and Shop Now -->
+                        <a href="#" class="btn  btn-perple1 col-md-5 mx-2 d-inline-block">View More</a>
+                        <button class="btn  custom-btn  btn-block col-md-5 d-inline-block">Shop This</button>
+                    </div>
+                </div>
             </div>
-  
-            <!-- Rating -->
-            <div class="d-flex justify-content-start mb-2">
-              <span class="text-warning">
-                <!-- Display the rating as stars -->
-                <ng-container *ngFor="let star of [].constructor(item.rating); let i = index">
-                  &#9733;
-                </ng-container>
-                <ng-container *ngFor="let star of [].constructor(5 - item.rating); let i = index">
-                  &#9734;
-                </ng-container>
-              </span>
-            </div>
-  
-            <!-- Buttons for View More and Shop Now -->
-            <a href="#" class="btn btn-link p-0 text-decoration-none">View More</a>
-            <button class="btn btn-primary btn-block ms-4">Shop This</button>
-          </div>
+
         </div>
-      </div>
+
     </div>
-  </div>
-  
+</div>

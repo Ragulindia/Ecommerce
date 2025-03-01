@@ -1,0 +1,118 @@
+.custom-btn {
+  position: relative;
+  padding: 10px 20px;
+  background-color: #c473ff;
+  color: #f8edeb;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.custom-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: black;
+  transition: all 0.5s;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.custom-btn:hover {
+  color: black;
+  background-color: white;
+  box-shadow: 4px 4px 8px #f8edeb;
+}
+
+.custom-btn:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  background-color: white;
+  opacity: 0;
+}
+
+.product-container-wrapper {
+  width: 100%;
+  overflow: hidden;
+  /* Hide anything beyond the visible area */
+}
+
+.product-container {
+  display: flex;
+  transition: transform 0.1s ease;
+  cursor: grab;
+}
+
+.product-card {
+  width: 250px;
+  /* Card width */
+  margin-right: 15px;
+  /* Space between cards */
+}
+
+.product-container.grabbing {
+  cursor: grabbing;
+  /* Change cursor when dragging */
+}
+
+/* Ensure the container shows only 3 items at a time */
+.product-container-wrapper {
+  width: 100%;
+  /* 3 cards * 250px per card + margin */
+}
+
+.text-purple {
+  color: #c473ff;
+}
+
+
+/* 45% OFF Badge */
+.badge-off {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Heart Icon on Top Right */
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  color: black;
+  border-color: black;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+
+
+.square-box {
+  width: 4vh;
+  /* Width of the box */
+  height: 4vh;
+  /* Height of the box */
+
+}
+
+.btn-perple1 {
+  border-color: #c473ff;
+  color: #c473ff
+}
+
+.btn-perple1:hover {
+  border-color: bisque;
+  color: black;
+}

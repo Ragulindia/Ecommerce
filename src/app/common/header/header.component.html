@@ -1,85 +1,98 @@
-<!-- <div class="">
-    <div class="nav">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">For Test</a>
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">New In</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Best Sellers</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Category
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Category 1</a></li>
-                        <li><a class="dropdown-item" href="#">Category 2</a></li>
-                        <li><a class="dropdown-item" href="#">Category 3</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-</div> -->
-
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
+        <!-- Hamburger Button (Visible but not clickable) -->
+     
+        <!-- Company Name (Visible only on larger screens) -->
+        <a class="navbar-brand fw-bold fs-5 d-none d-lg-block" href="#">For Test</a>
 
-        <a class="navbar-brand" href="#">For Test</a>
+        <!-- Navbar Content for Smaller Screens (Collapsed Mode) -->
 
+        <!-- Icons Row (Visible in Collapsed Mode) -->
+        <div class="d-flex justify-content-between d-lg-none w-100 align-items-center">
+            <!-- Left: Hamburger Icon (Visible but not clickable) -->
+            <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+                <input type="text" class="form-control border-0 rounded-pill mx-3" id="searchInput" placeholder="🔍 Search...">
+               
 
-        <div class="mx-auto">
-            <ul class="navbar-nav d-flex justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">New In</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Best Sellers</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Category
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Category 1</a></li>
-                        <li><a class="dropdown-item" href="#">Category 2</a></li>
-                        <li><a class="dropdown-item" href="#">Category 3</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <!-- Right: Bag and Profile Icons (Visible by default) -->
+            <div class="d-flex align-items-center">
+                <!-- Bag Icon -->
+                <a href="#" class="mx-3 text-center text-decoration-none text-dark">
+                    <i class="fas fa-shopping-bag"></i>
+                </a>
+
+                <!-- Profile Icon -->
+                <a href="#" class="mx-3 text-center text-decoration-none text-dark">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
         </div>
 
-        
-        <div class="d-flex align-items-center">
-            <!-- Search Icon -->
-            <a href="#" class="mx-3 text-center text-decoration-none text-dark">
-              <i class="fas fa-search"></i>
-              <div>Search</div>
-            </a>
-            
-            <!-- Bag Icon -->
-            <a href="#" class="mx-3 text-center text-decoration-none text-dark">
-              <i class="fas fa-shopping-bag"></i>
-              <div>Bag</div>
-            </a>
-            
-            <!-- Heart Icon -->
-            <a href="#" class="mx-3 text-center text-decoration-none text-dark">
-              <i class="fas fa-heart"></i>
-              <div>Dreamlist</div>
-            </a>
-            
-            <!-- Profile Icon -->
-            <a href="#" class="mx-3 text-center text-decoration-none text-dark">
-              <i class="fas fa-user"></i>
-              <div>Profile</div>
-            </a>
-          </div>
+
+        <!-- Navbar Content for Larger Screens (Visible only on medium and larger screens) -->
+        <div class="d-none d-lg-flex w-100 justify-content-between align-items-center">
+
+            <!-- Center: Navigation Links (New In, Best Sellers, Category) -->
+            <div class="d-flex justify-content-center mx-auto">
+                <ul class="navbar-nav d-flex justify-content-center fs-5">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link fw-bold" href="#">New In</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link fw-bold" href="#">Best Sellers</a>
+                    </li>
+                    <li class="nav-item dropdown fw-bold">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Category 1</a></li>
+                            <li><a class="dropdown-item" href="#">Category 2</a></li>
+                            <li><a class="dropdown-item" href="#">Category 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Side: Icons (Search, Bag, Dreamlist, Profile) -->
+            <div class="d-flex align-items-center">
+                <!-- Search Icon -->
+                <a href="#" class="mx-3 text-center text-decoration-none text-dark">
+                    <i class="fas fa-search"></i>
+                </a>
+
+                <!-- Bag Icon -->
+                <a href="#" class="mx-3 text-center text-decoration-none text-dark">
+                    <i class="fas fa-shopping-bag"></i>
+                </a>
+
+                <!-- Dreamlist Icon -->
+                <a href="#" class="mx-3 text-center text-decoration-none text-dark">
+                    <i class="fas fa-heart"></i>
+                </a>
+
+                <!-- Profile Icon -->
+                <a href="#" class="mx-3 text-center text-decoration-none text-dark">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
     </div>
 </nav>
+
+<script>
+    // Toggle the search input field when the search icon is clicked (for small screens/collapsed mode)
+    document.getElementById('searchIcon').addEventListener('click', function () {
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput.classList.contains('d-none')) {
+            searchInput.classList.remove('d-none');
+            searchInput.focus();
+        } else {
+            searchInput.classList.add('d-none');
+        }
+    });
+</script>
